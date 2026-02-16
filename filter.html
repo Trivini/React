@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const products = [
+                {
+                    id: 1,
+                    name: "Wireless Headphones",
+                    price: 99.99,
+                    stockAvailable: true,
+                    category: "Electronics"
+                },
+                {
+                    id: 2,
+                    name: "Leather Wallet",
+                    price: 45.00,
+                    stockAvailable: false,
+                    category: "Accessories"
+                },
+                {
+                    id: 3,
+                    name: "Running Shoes",
+                    price: 129.99,
+                    stockAvailable: true,
+                    category: "Footwear"
+                },
+                {
+                    id: 4,
+                    name: "Smartphone Case",
+                    price: 19.99,
+                    stockAvailable: true,
+                    category: "Electronics"
+                },
+                {
+                    id: 5,
+                    name: "Coffee Mug",
+                    price: 12.50,
+                    stockAvailable: false,
+                    category: "Home"
+                }
+                ];
+
+                const productAvailable = products.filter(function(product){
+                   // return product.stockAvailable;
+                    return product.category==="Electronics"
+                });
+
+                console.log(productAvailable);
+
+    </script>
+</body>
+</html>

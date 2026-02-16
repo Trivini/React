@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const bankAccount = {
+            accountNumber: "SBIN000458912",
+            accountType: "Savings",
+            balance: 250000,
+            currency: "INR",
+
+            holder: {
+                firstName: "Arun",
+                lastName: "Krishnan",
+                gender: "Male",
+                dateOfBirth: "1998-06-15",
+                phone: "+91-9876543210",
+                email: "arun.krishnan@gmail.com",
+                occupation: "Software Developer"
+            },
+
+            address: {
+                doorNo: "12-4-56",
+                street: "Anna Salai",
+                area: "T. Nagar",
+                city: "Chennai",
+                district: "Chennai",
+                state: "Tamil Nadu",
+                pincode: "600017",
+                country: "India"
+            },
+
+            bankDetails: {
+                bankName: "State Bank of India",
+                branch: "T Nagar Branch",
+                ifscCode: "SBIN0000458",
+                micrCode: "600002045"
+            },
+
+            // ✅ Array of strings
+            nominees: [
+                "Lakshmi Krishnan",
+                "Ravi Krishnan"
+            ],
+
+            servicesEnabled: [
+                "Net Banking",
+                "Mobile Banking",
+                "UPI",
+                "ATM Card",
+                "SMS Alerts"
+            ],
+
+            transactions: [
+                {
+                    id: 1,
+                    type: "Credit",
+                    amount: 50000,
+                    date: "2026-02-10",
+                    description: "Salary Credit"
+                },
+                {
+                    id: 2,
+                    type: "Debit",
+                    amount: 5000,
+                    date: "2026-02-12",
+                    description: "Electricity Bill Payment"
+                }
+            ]
+        };
+
+
+
+
+        // const accountNumber = bankAccount.accountNumber;
+        // console.log(accountNumber);
+
+        // const nomineesName = bankAccount.nominees[0];
+        // console.log(nomineesName);
+
+        // const transactionsType = bankAccount.transactions[1].type;
+
+        // console.log(transactionsType);
+
+    //by destructuring
+
+        const {accountNumber,accountType,bankDetails:{branch},} = bankAccount;
+
+        console.log(accountNumber,accountType,branch);
+
+        const {transactions:[firstdescription,seconddescription]} = bankAccount;
+
+        console.log(firstdescription,seconddescription);
+
+
+
+    </script>
+</body>
+
+</html>

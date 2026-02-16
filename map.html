@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // const names = ["Aryan","Sakshi","Pradnya","Shraddha","Lokesh"];
+
+        // const formattednames = names.map(function(name,index){
+        //    // return name.toUpperCase();
+        //     return name.toLowerCase();
+        // });
+
+        // console.log(formattednames);
+
+
+        const users = [
+                {
+                    id: 1,
+                    name: "Aarav Sharma",
+                    email: "aarav.sharma@example.com",
+                    age: 28,
+                    role: "Developer"
+                },
+                {
+                    id: 2,
+                    name: "Priya Patel",
+                    email: "priya.patel@example.com",
+                    age: 32,
+                    role: "Designer"
+                },
+                {
+                    id: 3,
+                    name: "Raj Kumar",
+                    email: "raj.kumar@example.com",
+                    age: 25,
+                    role: "Tester"
+                },
+                {
+                    id: 4,
+                    name: "Neha Gupta",
+                    email: "neha.gupta@example.com",
+                    age: 30,
+                    role: "Manager"
+                },
+                {
+                    id: 5,
+                    name: "Vikram Singh",
+                    email: "vikram.singh@example.com",
+                    age: 27,
+                    role: "Analyst"
+                }
+                ];
+
+                // const userNames = [];
+
+                // users.forEach(function(user){
+                //     userNames.push(user.name);
+                // });
+
+                //  console.log(userNames);
+
+                const userName = users.map(function(user){
+                    return user.name;
+                });
+
+                console.log(userName);
+
+    </script>
+</body>
+</html>

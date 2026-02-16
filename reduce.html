@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const products = [
+            { id: 1, name: "Laptop", category: "Electronics", price: 55000, inStock: true, quantity: 12 },
+            { id: 2, name: "Mobile Phone", category: "Electronics", price: 18000, inStock: true, quantity: 25 },
+            { id: 3, name: "Headphones", category: "Accessories", price: 1500, inStock: false, quantity: 0 },
+            { id: 4, name: "Keyboard", category: "Accessories", price: 900, inStock: true, quantity: 40 },
+            { id: 5, name: "Mouse", category: "Accessories", price: 600, inStock: true, quantity: 35 },
+            { id: 6, name: "Smart Watch", category: "Wearables", price: 3500, inStock: false, quantity: 0 },
+            { id: 7, name: "Printer", category: "Electronics", price: 7500, inStock: true, quantity: 8 },
+            { id: 8, name: "Tablet", category: "Electronics", price: 22000, inStock: true, quantity: 5 },
+            { id: 9, name: "Charger", category: "Accessories", price: 450, inStock: true, quantity: 60 },
+            { id: 10, name: "USB Cable", category: "Accessories", price: 200, inStock: true, quantity: 100 }
+        ];
+
+        // let totalPrice = 0;
+        // products.forEach(function(product){
+        //     totalPrice += product.price;
+        // });
+
+        // console.log(totalPrice);
+
+
+        // const totalPrice = products.reduce(function(acculumator,product){
+        //     return acculumator+product.price;
+        // },0);
+        // console.log(totalPrice);
+
+        // const numbers = [2,3,4];
+
+        // const product = numbers.reduce(function(acc,pro){
+        //     return acc*pro;
+        // },1);
+
+        // console.log(product);
+
+        const numbers = [5,66,12,3,20,34];
+        const maxValue = numbers.reduce((acculumator,num)=>
+             num > acculumator ? num:acculumator, numbers[0]);
+        
+
+        console.log(maxValue);
+
+
+
+    </script>
+</body>
+
+</html>
